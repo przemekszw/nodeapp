@@ -1,0 +1,10 @@
+body{
+    color: purple;
+}
+a:hover{
+    color: black;
+}
+#container{
+    width: 10%;
+    
+}

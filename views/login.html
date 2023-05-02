@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/assets/css/style_login.css">
+    <title>CRUD Application</title>
+</head>
+<body>
+    
+    <!-- Header -->
+    <header id="header">
+        <nav>       
+            <div class="text-center">
+                <h1>User Management System</h1>
+            </div>
+        </nav>
+    </header>
+
+<!-- Main Site -->
+<main id="site-main">   
+    <div class="form-title text-center">
+            <div class="box-nav d-flex justify-between">
+                <h1>Welcome, u can login here</h1>
+                <h2 >Enter your password and username to login</h2>
+            </div>
+           
+        <!-- form handling-->
+        <form action="/home" method="POST" id="login_user">
+            <div class="box">
+            <div class="form-group">
+                <h4>Login</h4>
+                <label for="name"><i class="fa-solid fa-user"></i></label>
+                <input type="text" name="name" value="" placeholder="Username">
+            </div>
+            <div class="form-group">
+            <label for="name"><i class="fa-solid fa-key"></i></label>
+             <input type="password" name="email" value="" placeholder="Password">
+             </div>
+             <div class="form-group">
+             <input type="submit" class="btn btn-primary" value="Log in">
+            </div>
+        </div>
+    </div>
+        </form>
+</main>
+<!-- Main Site -->
+
+<!-- include footer -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script src="/js/index.js"></script>
+</body>
+</html>
+<!-- include footer -->

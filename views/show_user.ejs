@@ -1,0 +1,43 @@
+
+<!-- include header -->
+<%- include('include/_header')%>
+<!-- include header -->
+
+<!-- Main Site -->
+<main id="site-main">
+    <div class="container">
+        <div class="box-nav d-flex justify-between">
+            <div class="filter">
+                <a href="/home"><i class="fas fa-angle-double-left"></i>All users</a>
+            </div>
+        </div>
+        <div class="form-title text-center">
+            <h2 class="text-dark">Details about user: <%= user.name %></h2>
+            
+        </div>
+        <!-- form handling-->
+        <form method="POST" id="show_user">
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Name</th>
+                        <th>@Email</th>  
+                        <th>Position</th>
+                        <th>Date</th>
+                        <th>Gender</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <%- include('include/_show_user') %>
+                </tbody>
+            </table>
+        </form>
+    </div>
+</main>
+<!-- Main Site -->
+
+<!-- include footer -->
+    <%- include('include/_footer')%>
+<!-- include footer -->
